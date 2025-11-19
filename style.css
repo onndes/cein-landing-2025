@@ -1,0 +1,434 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  font-family: "Styrene A Web";
+  font-size: 16px;
+  min-width: 100%;
+}
+
+/* ---------------------- */
+/* HERO */
+/* ---------------------- */
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  background-color: black;
+}
+
+.header-top__text {
+  color: white;
+  padding: 12px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 10px 20px;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.main-nav__list {
+  display: flex;
+  gap: 41px;
+  padding-left: 41px;
+}
+
+.user-nav {
+  margin-left: auto;
+}
+
+.user-nav__list {
+  display: flex;
+  gap: 30px;
+}
+
+.user-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main {
+  height: 100%;
+}
+
+.hero {
+  position: relative;
+  /* height: 100dvh; */
+  height: 100%;
+  /* max-height: 712px; */
+  /* background-image: url("./image/content.png");
+  background-size: cover;
+  background-position: center; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero__picture {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__wrapper-content {
+  padding: 4rem;
+}
+
+.hero__text {
+  font-size: 1.5rem;
+  line-height: 133%;
+  padding-bottom: 1rem;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 11px 18px;
+
+  background-color: white;
+}
+
+/* Burger men */
+
+@media (max-width: 640px) {
+  .main-nav,
+  .user-nav__link-store {
+    display: none;
+  }
+  .user-nav__list {
+    gap: 5px;
+  }
+}
+
+/* ---------------------- */
+/* MAIN */
+/* ---------------------- */
+
+/* description block */
+
+.description {
+  padding: 2rem;
+}
+
+.title-block {
+  font-size: 18px;
+  line-height: 133%;
+  padding: 2rem 0 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.description__wrap-cards {
+  display: flex;
+  flex: 1 1 432px;
+  gap: 1.25rem;
+}
+
+.description__card {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.description__card {
+  height: 532px;
+}
+
+.desc-card-1 {
+  background-image: url(./image/description/1.png);
+}
+
+.desc-card-2 {
+  background-image: url(./image/description/2.png);
+}
+
+.desc-card-3 {
+  background-image: url(./image/description/3.png);
+}
+
+.description__text {
+  padding: 2rem;
+  color: white;
+  text-align: end;
+  align-items: end;
+}
+
+/* what-to-wear */
+
+.what-to-wear {
+  padding: 2rem;
+}
+
+.what-to-wear__wrap-cards {
+  display: flex;
+  gap: 1.25rem;
+  /* padding: 2rem; */
+}
+
+.what-to-wear__card {
+  flex: 1 1 200px;
+}
+
+.what-to-were__link {
+  display: block;
+  position: relative;
+}
+
+.what-to-wear__add-cart {
+  position: absolute;
+  /* content: "=="; */
+  /* z-index: 2; */
+  bottom: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 200;
+  width: 40px;
+  height: 40px;
+}
+
+.what-to-wear__add-cart:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.what-to-were__link img {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.what-to-wear__info {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+/* style-showcase */
+.style-showcase {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.style-showcase__card {
+  flex: 1 1 50%;
+  position: relative;
+  max-width: 500px;
+}
+
+.style-showcase__img {
+  max-width: 100%;
+  position: relative;
+}
+
+.style-showcase__card::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(-180deg, #00000000 46%, #000 85%), linear-gradient(-180deg, #00000000 46%, #000 85%);
+  opacity: 0.4;
+}
+
+.style-showcase__desc-card {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  z-index: 1;
+}
+
+/* quotes */
+.quotes {
+  background-color: #f5f4f4;
+  margin-bottom: 2rem;
+}
+
+.quotes__wrap-content {
+  padding: 96px 15px 106px 15px;
+}
+
+.quotes__title {
+  font-size: 1.5rem;
+  margin-bottom: 2.9rem;
+  text-align: center;
+}
+
+.quotes__description {
+  line-height: 137%;
+  max-width: 718px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* instagram */
+.instagram {
+  padding: 2rem;
+}
+
+.instagram__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.instagram__cards-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instagram__card {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.instagram__card::after {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  background-color: black;
+  opacity: 0%;
+  transition: opacity 0.3s ease;
+}
+
+.instagram__card:before {
+  content: url("./image/InstagramLogo.svg");
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0%;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.instagram__card:hover:after {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.instagram__card:hover:before {
+  opacity: 1;
+}
+
+.instagram__img {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+
+.footer {
+  padding: 2rem;
+  background-color: #f5f4f4;
+}
+
+.footer__wrap-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 3rem 0 4rem 0;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__tittle-menu {
+  color: #565656;
+  letter-spacing: 0.01em;
+  line-height: 155%;
+  font-size: 0.7rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer__list-item {
+  line-height: 164%;
+  font-size: 0.8rem;
+}
+
+.footer__form {
+  max-width: 441px;
+}
+
+.footer__form-tittle {
+  padding-bottom: 1.5rem;
+}
+
+.footer__form-form {
+  margin: 0.2rem;
+}
+
+.footer__form-input {
+  padding: 0.7rem 0.8rem;
+  min-width: 240px;
+  border: 1px solid #d3d4d5;
+  margin-left: -3px;
+  color: #565656;
+}
+
+.footer__form-description {
+  display: block;
+  font-size: 0.86rem;
+  margin-bottom: 1.125rem;
+}
+
+.footer__form-description-link {
+  text-decoration: underline;
+  line-height: 154%;
+}
+
+.footer__form-button {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 11px 18px;
+}
+
+.footer__last-word {
+  color: #565656;
+  margin-bottom: 3rem;
+  font-size: 0.8rem;
+}

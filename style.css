@@ -69,10 +69,7 @@ body {
 }
 
 .hero {
-  position: relative;
-  /* height: 100dvh; */
   height: 100%;
-  /* max-height: 712px; */
   background-image: url("./image/content.png");
   background-size: cover;
   background-position: center;

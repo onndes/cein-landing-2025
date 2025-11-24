@@ -15,11 +15,14 @@
         <p class="header-top__text">Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now</p>
       </div>
       <header class="header">
-        <div class="burger" aria-label-:="Open navigator menu" aria-expand="false" aria-controls="main-nav">
-          <span class="burger__line" aria-hidden="true"></span>
-        </div>
-        <a href="/" class="header__logo" aria-label="CEIN home page">CEIN.</a>
-        <nav class="main-nav">
+        <!-- Burger menu -->
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" hidden />
+        <label for="burger-toggle" class="burger" aria-label="Toggle navigation menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
+        <nav class="main-nav" id="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Shop</a>
@@ -35,6 +38,9 @@
             </li>
           </ul>
         </nav>
+        <!-- Burger menu -->
+
+        <a href="/" class="header__logo" aria-label="CEIN home page">CEIN.</a>
 
         <nav class="user-nav">
           <ul class="user-nav__list">

@@ -11,6 +11,20 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1401px) {
+  .container {
+    padding: 0;
+  }
+}
+
 /* ---------------------- */
 /* HERO */
 /* ---------------------- */
@@ -42,10 +56,13 @@ body {
 }
 
 .header__logo {
+  order: 1;
   font-weight: 700;
   font-size: 2rem;
 }
-
+.main-nav {
+  order: 2;
+}
 .main-nav__list {
   display: flex;
   gap: 41px;
@@ -54,6 +71,7 @@ body {
 
 .user-nav {
   margin-left: auto;
+  order: 3;
 }
 
 .user-nav__list {
@@ -145,9 +163,6 @@ body {
 #burger-toggle:checked ~ .burger .burger-line:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
-
-/* 
-} */
 
 @media (max-width: 867px) {
   .burger {
@@ -273,7 +288,7 @@ body {
 .what-to-wear__wrap-cards {
   display: flex;
   gap: 1.25rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* padding: 2rem; */
   justify-content: center;
 }
@@ -321,6 +336,27 @@ body {
   line-height: 1.3rem;
 }
 
+@media (max-width: 400px) {
+  .description__card {
+    height: 340px;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .what-to-wear__horizontal-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+  }
+
+  .what-to-wear__wrap-cards {
+    justify-content: flex-start;
+  }
+  .what-to-wear__horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+}
 /* style-showcase */
 .style-showcase {
   padding: 2rem;
@@ -397,12 +433,13 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .instagram__card {
   width: 250px;
   height: 250px;
+  flex: 0 0 250px;
   position: relative;
 }
 
@@ -414,6 +451,7 @@ body {
   background-color: black;
   opacity: 0%;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .instagram__card:before {
@@ -427,15 +465,26 @@ body {
   opacity: 0%;
   transition: opacity 0.3s ease;
   z-index: 1;
+  pointer-events: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .instagram__card:hover:after {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  .instagram__card:hover:before {
+    opacity: 1;
+  }
 }
 
-.instagram__card:hover:after {
-  opacity: 0.4;
-  cursor: pointer;
-}
-
-.instagram__card:hover:before {
-  opacity: 1;
+@media (hover: none) and (pointer: coarse) {
+  .instagram__card:active:before {
+    opacity: 0.5;
+  }
+  .instagram__card:active::after {
+    opacity: 1;
+  }
 }
 
 .instagram__img {
@@ -444,6 +493,22 @@ body {
   background-position: center;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1400px) {
+  .horizontal-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+  }
+
+  .instagram__cards-wrap {
+    justify-content: flex-start;
+  }
+
+  .horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
 }
 
 /* footer */
@@ -528,12 +593,23 @@ body {
   .footer__wrap-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
   .footer__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+  }
+  .footer__last-word {
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 

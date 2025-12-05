@@ -14,7 +14,8 @@
       <div class="header-top">
         <p class="header-top__text">Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now</p>
       </div>
-      <header class="header">
+
+      <header class="header container">
         <!-- Burger menu -->
         <input type="checkbox" id="burger-toggle" class="burger-toggle" hidden />
         <label for="burger-toggle" class="burger" aria-label="Toggle navigation menu">
@@ -70,6 +71,7 @@
           </ul>
         </nav>
       </header>
+
       <div class="main">
         <section class="hero">
           <!-- Choosing speed over perfection for now. Full pixel-perfect + optimization treatment reserved for serious and bigger projects  -->
@@ -85,7 +87,8 @@
               loading="eager"
             />
           </picture> -->
-          <div class="hero__wrapper-content">
+
+          <div class="hero__wrapper-content container">
             <h1 class="hero__text">
               Elevate Your Style
               <br />
@@ -102,7 +105,7 @@
     <!--  ***** MAIN ***** -->
     <main class="main">
       <!-- description -->
-      <section class="description">
+      <section class="description container">
         <h3 class="description__title title-block">
           Elevate your lifestyle with a more intelligent, superior wardrobe.
           <br />
@@ -122,59 +125,61 @@
       </section>
 
       <!-- what-to-wear -->
-      <section class="what-to-wear">
+      <section class="what-to-wear container">
         <h2 class="what-to-wear__title title-block">What to Wear Now</h2>
-        <div class="what-to-wear__wrap-cards wrap-cards">
-          <article class="what-to-wear__card card">
-            <a href="#" class="what-to-were__link">
-              <img src="./image/wear-now/1.png" alt="Classic Easy Zipper Tote" class="what-to-wear__plus" />
-              <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
-            </a>
-            <div class="what-to-wear__info">
-              <p class="what-to-wear__title">Classic Easy Zipper Tote</p>
-              <p class="what-to-wear__price">1200 $</p>
-            </div>
-          </article>
-          <article class="what-to-wear__card card">
-            <a href="#" class="what-to-were__link">
-              <img src="./image/wear-now/2.png" alt="Concertina Phone Bag" class="what-to-wear__plus" />
-              <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
-            </a>
-            <div class="what-to-wear__info">
-              <p class="what-to-wear__title">Concertina Phone Bag</p>
-              <p class="what-to-wear__price">1670 $</p>
-            </div>
-          </article>
-          <article class="what-to-wear__card card">
-            <a href="#" class="what-to-were__link">
-              <img src="./image/wear-now/3.png" alt="Wool Cashmere Sweater Coat" class="what-to-wear__plus" />
-              <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
-            </a>
-            <div class="what-to-wear__info">
-              <p class="what-to-wear__title">Wool Cashmere Sweater Coat</p>
-              <p class="what-to-wear__price">504 $</p>
-            </div>
-          </article>
-          <article class="what-to-wear__card card">
-            <a href="#" class="what-to-were__link">
-              <img src="./image/wear-now/4.png" alt="Single-Origin Cashmere Beanie" class="what-to-wear__plus" />
-              <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
-            </a>
-            <div class="what-to-wear__info">
-              <p class="what-to-wear__title">Single-Origin Cashmere Beanie</p>
-              <p class="what-to-wear__price">2300 $</p>
-            </div>
-          </article>
-          <article class="what-to-wear__card card">
-            <a href="#" class="what-to-were__link">
-              <img src="./image/wear-now/5.png" alt="Alpaca Wool Cropped Cardigan" class="what-to-wear__plus" />
-              <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
-            </a>
-            <div class="what-to-wear__info">
-              <p class="what-to-wear__title">Alpaca Wool Cropped Cardigan</p>
-              <p class="what-to-wear__price">350 $</p>
-            </div>
-          </article>
+        <div class="what-to-wear__horizontal-scroll">
+          <div class="what-to-wear__wrap-cards wrap-cards">
+            <article class="what-to-wear__card card">
+              <a href="#" class="what-to-were__link">
+                <img src="./image/wear-now/1.png" alt="Classic Easy Zipper Tote" class="what-to-wear__plus" />
+                <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
+              </a>
+              <div class="what-to-wear__info">
+                <p class="what-to-wear__title">Classic Easy Zipper Tote</p>
+                <p class="what-to-wear__price">1200 $</p>
+              </div>
+            </article>
+            <article class="what-to-wear__card card">
+              <a href="#" class="what-to-were__link">
+                <img src="./image/wear-now/2.png" alt="Concertina Phone Bag" class="what-to-wear__plus" />
+                <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
+              </a>
+              <div class="what-to-wear__info">
+                <p class="what-to-wear__title">Concertina Phone Bag</p>
+                <p class="what-to-wear__price">1670 $</p>
+              </div>
+            </article>
+            <article class="what-to-wear__card card">
+              <a href="#" class="what-to-were__link">
+                <img src="./image/wear-now/3.png" alt="Wool Cashmere Sweater Coat" class="what-to-wear__plus" />
+                <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
+              </a>
+              <div class="what-to-wear__info">
+                <p class="what-to-wear__title">Wool Cashmere Sweater Coat</p>
+                <p class="what-to-wear__price">504 $</p>
+              </div>
+            </article>
+            <article class="what-to-wear__card card">
+              <a href="#" class="what-to-were__link">
+                <img src="./image/wear-now/4.png" alt="Single-Origin Cashmere Beanie" class="what-to-wear__plus" />
+                <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
+              </a>
+              <div class="what-to-wear__info">
+                <p class="what-to-wear__title">Single-Origin Cashmere Beanie</p>
+                <p class="what-to-wear__price">2300 $</p>
+              </div>
+            </article>
+            <article class="what-to-wear__card card">
+              <a href="#" class="what-to-were__link">
+                <img src="./image/wear-now/5.png" alt="Alpaca Wool Cropped Cardigan" class="what-to-wear__plus" />
+                <button class="what-to-wear__add-cart" aria-label="Add to cart">+</button>
+              </a>
+              <div class="what-to-wear__info">
+                <p class="what-to-wear__title">Alpaca Wool Cropped Cardigan</p>
+                <p class="what-to-wear__price">350 $</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -192,7 +197,7 @@
 
       <!-- quotes -->
       <section class="quotes">
-        <div class="quotes__wrap-content">
+        <div class="quotes__wrap-content container">
           <h2 class="quotes__title">The Art of Fewer, Better Choices</h2>
           <p class="quotes__description">
             Opting for quality over quantity means selecting timeless, durable, and responsibly made items. This
@@ -203,23 +208,25 @@
       </section>
 
       <!-- instagram -->
-      <section class="instagram">
+      <section class="instagram container">
         <h2 class="instagram__title title">Shop Instagram</h2>
-        <div class="instagram__cards-wrap">
-          <div class="instagram__card">
-            <img src="./image/images/image.jpg" alt="Instagram photo 1" class="instagram__img" />
-          </div>
-          <div class="instagram__card">
-            <img src="./image/images/image_1.jpg" alt="Instagram photo 2" class="instagram__img" />
-          </div>
-          <div class="instagram__card">
-            <img src="./image/images/image_2.jpg" alt="Instagram photo 3" class="instagram__img" />
-          </div>
-          <div class="instagram__card instagram__card_hover">
-            <img src="./image/images/image_3.jpg" alt="Instagram photo 4" class="instagram__img" />
-          </div>
-          <div class="instagram__card">
-            <img src="./image/images/image_4.jpg" alt="Instagram photo 5" class="instagram__img" />
+        <div class="horizontal-scroll">
+          <div class="instagram__cards-wrap">
+            <div class="instagram__card">
+              <img src="./image/images/image.jpg" alt="Instagram photo 1" class="instagram__img" />
+            </div>
+            <div class="instagram__card">
+              <img src="./image/images/image_1.jpg" alt="Instagram photo 2" class="instagram__img" />
+            </div>
+            <div class="instagram__card">
+              <img src="./image/images/image_2.jpg" alt="Instagram photo 3" class="instagram__img" />
+            </div>
+            <div class="instagram__card instagram__card_hover">
+              <img src="./image/images/image_3.jpg" alt="Instagram photo 4" class="instagram__img" />
+            </div>
+            <div class="instagram__card">
+              <img src="./image/images/image_4.jpg" alt="Instagram photo 5" class="instagram__img" />
+            </div>
           </div>
         </div>
       </section>
@@ -227,7 +234,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer__wrap-block">
+      <div class="footer__wrap-block container">
         <!-- footer menu -->
         <div class="footer__menu-wrapp">
           <menu class="footer__menu">
@@ -277,7 +284,7 @@
           <button type="submit" class="footer__form-button">Subscribe</button>
         </div>
       </div>
-      <p class="footer__last-word">©CEIN</p>
+      <p class="footer__last-word container">©CEIN</p>
     </footer>
     <script src="./script.js"></script>
   </body>
